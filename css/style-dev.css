@@ -35,3 +35,7 @@
 	width:49%;
 	margin:5px;
 }
+.col-3-li>li{
+	width: 350px;
+    margin: 10px;
+}
