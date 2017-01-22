@@ -454,6 +454,7 @@ and (max-width : 1199px) {
 .about-text p {
     color: #777;
     text-align: justify;
+	font-size: 16px;
 }
 .about-text ul {
     margin-top: 30px;
