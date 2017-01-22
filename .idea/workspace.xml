@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eeccfbe4-bdc0-4569-b9bf-7c1edcaf61cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="eeccfbe4-bdc0-4569-b9bf-7c1edcaf61cd" name="Default" comment="" />
     <ignored path="wikara.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -136,12 +134,12 @@
       <workItem from="1484986427514" duration="5200000" />
       <workItem from="1485012818757" duration="1342000" />
       <workItem from="1485070244627" duration="198000" />
-      <workItem from="1485071235036" duration="3857000" />
+      <workItem from="1485071235036" duration="3903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17864000" />
+    <option name="totallyTimeSpent" value="17910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="234" y="41" width="921" height="661" extended-state="0" />
