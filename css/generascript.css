@@ -1,0 +1,481 @@
+/*
+	::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	::::::::::::::::::::::::::::::::::::::::: Generascript :::::::::::::::::::::::::::::::::::::::::
+	:::::::::::::::::::::::::::::: Dikembangkan oleh GenerasiCipta.com :::::::::::::::::::::::::::::
+	:::::::::: Harap jangan menghapus informasi ini demi pengembangan script lebih lanjut ::::::::::
+	:::: Dengan tidak menghapus informasi ini, kamu telah membantu menghargai sesama programmer ::::
+	:::::::::::::::::: Script ini diberikan secara gratis untuk semua pengembang :::::::::::::::::::
+	::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+*/
+
+generascriptdata
+{display:none;}
+generascriptdata_slider
+{
+	display:none;
+}
+.generascriptCanvasNone
+{
+	display:none;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+}
+#generascriptSlider
+{
+	height:inherit;
+	width:inherit;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.generascriptSlider_child
+{
+	display:inline-block;
+	padding:10px;
+}
+.generascriptSliderDivider
+{
+	width:inherit;
+	height:inherit;
+	border-style:none;
+	border-width:0px;
+	overflow:hidden;
+}
+#sliderPosition
+{
+	width:inherit;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+}
+.sliderBulletParent
+{
+	list-style-type:none;
+	display:inline-flex;
+	padding:10px;
+	margin:0px;
+}
+#generascriptSliderNavigation
+{
+	width:inherit;
+	height:20px;
+	text-align:center;
+}
+#generascriptSliderPrev
+{
+	display:inline;
+	color:black;
+	float:left;
+}
+#generascriptSliderNext
+{
+	display:inline;
+	color:black;
+	float:right;
+}
+
+
+
+.generascript_fade_deactive
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	margin:0px auto;
+	width:100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+	z-index:9999;
+	opacity:0;
+}
+.generascript_fade_active
+{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	margin: 0px auto;
+	padding: 0px;
+	overflow-y: auto;
+	width: 105%;
+	height: 100%;
+	transition: 0.7s;
+	-webkit-transition: 0.7s;
+	-moz-transition: 0.7s;
+	-o-transition: 0.7s;
+	z-index: 9999;
+	opacity: 1;
+}
+.generascript_fade_active::-webkit-scrollbar, 
+.generascript_slideUp_active::-webkit-scrollbar,
+.generascript_slideDown_active::-webkit-scrollbar,
+.generascript_popup_active::-webkit-scrollbar,
+.generascript_slideRight_active::-webkit-scrollbar,
+.generascript_slideLeft_active::-webkit-scrollbar
+{display:none;}
+
+
+.generascript_slideUp_deactive
+{
+	position:absolute;
+	bottom:-1000px;
+	left:0px;
+	margin:0px auto;
+	width:100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+}
+.generascript_slideUp_active
+{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	margin:0px auto;
+	overflow-y: auto;
+	width:100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+	z-index:9999;
+}
+
+
+.generascript_slideDown_deactive
+{
+	position:absolute;
+	top:-1000px;
+	left:0px;
+	margin:0px auto;
+	width:100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+}
+.generascript_slideDown_active
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	margin:0px auto;
+	overflow-y: auto;
+	width:100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+	z-index:9999;
+}
+
+
+.generascript_slideLeft_deactive
+{
+	position:fixed;
+	top:0px;
+	right:-2000px;
+	margin:0px auto;
+	width:100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+}
+.generascript_slideLeft_active
+{
+	position:fixed;
+	top:0px;
+	right:0px;
+	margin:0px auto;
+	overflow-y: auto;
+	width: 100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+	z-index:9999;
+}
+
+
+.generascript_slideRight_deactive
+{
+	position:fixed;
+	top:0px;
+	left:-1000px;
+	margin:0px auto;
+	width:100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+}
+.generascript_slideRight_active
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	margin:0px auto;
+	overflow-y: auto;
+	width:100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+	z-index:9999;
+}
+
+
+.generascript_popup_deactive
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	margin:0px auto;
+	width:100%;
+	height:100%;
+	transform:scale(0);
+	-webkit-transform:scale(0);
+	-moz-transform:scale(0);
+	-o-transform:scale(0);
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+}
+.generascript_popup_active
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	margin:0px auto;
+	overflow-y: auto;
+	width:100%;
+	height:100%;
+	transform:scale(1);
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-o-transform:scale(1);
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+	z-index:9999;
+}
+
+
+.generascript_windowSlider_next_deactive
+{
+	position:fixed;
+	top:0px;
+	left:-1000px;
+	margin:0px auto;
+	width:100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+}
+.generascript_windowSlider_next_active
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	margin:0px auto;
+	width:100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+	z-index:9999;
+}
+
+
+.generascript_windowSlider_prev_deactive
+{
+	position:fixed;
+	top:0px;
+	right:-1000px;
+	margin:0px auto;
+	width:100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+}
+.generascript_windowSlider_prev_active
+{
+	position:fixed;
+	top:0px;
+	left:-1000px;
+	margin:0px auto;
+	width:100%;
+	height:100%;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+	z-index:9999;
+}
+
+
+.generascript_top
+{z-index:9999999;}
+.generascript_block
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:1;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+	background:rgba(0, 0, 0, 0.1);
+}
+.generascript_unblock
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:1;
+	transition:0.7s;
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+	background:rgba(0, 0, 0, 0);
+}
+.generascript_img_container
+{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+.generascript_img_innerSet
+{
+	height:inherit;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	width:inherit;
+}
+.generascript_img_innerSet img
+{
+	width:100%;
+}
+
+.generascript_mention
+{
+	border-radius:50px;
+	-webkit-border-radius:50px;
+	height:25px;
+	overflow:hidden;
+	display:inline-flex;
+}
+.generascript_mention .name
+{
+	color:#fff !important;
+	padding:1px 10px 1px 4px;
+}
+.generascript_mention img
+{
+	width:25px;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+}
+.sub_dropmenu
+{
+	list-style-type:none;
+	padding:20px;
+}
+.sub_dropmenu a
+{
+	color:#fff;
+}
+.tooltip
+{
+	position:relative;
+	display: inline-block;
+	z-index: 1030;
+	font-size: inherit !important;
+	line-height: inherit !important;
+	opacity: 1 !important;
+	filter: auto !important;
+	visibility: visible !important;
+}
+.tooltip .tooltiptext
+{
+	transition:0.4s;
+	position:relative;
+	top:-10px;
+	opacity:0;
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	left: 50%;
+	margin-left: -60px;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+}
+.tooltip .tooltiptext::after
+{
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+}
+.tooltip:hover .tooltiptext
+{
+	visibility: visible;
+	transition:opacity 1s;
+	opacity:0.8;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	top: 150%;
+}
+
+.generascript-de_stilj
+{
+	position: relative;
+	column-count: 4;
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-gap: 10px;
+	-webkit-column-gap: 10px;
+	-moz-column-gap: 10px;
+}
