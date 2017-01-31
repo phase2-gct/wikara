@@ -1,0 +1,60 @@
+.data_container
+{
+	position:relative;
+	height:0%;
+}
+.data_wrapper
+{
+	margin:0px auto;
+	width:33%; /*get from data_content (width+(padding*2))*/
+	min-width: 440px;
+}
+.data_content
+{
+    position: absolute;
+    top: 15%;
+    background: #FFFFFF;
+    width: 33%;
+    padding: 20px;
+    margin: 50px 0px;
+    border: 0px;
+    min-width: 400px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -khtml-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -o-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+@media screen and (max-width:800px)
+{
+	.data_content
+	{
+		width:60%;
+	}
+	.data_wrapper
+	{
+		width:70%;
+	}
+}
+@media screen and (max-width:700px)
+{
+	.data_content
+	{
+		width:70%;
+	}
+	.data_wrapper
+	{
+		width:80%;
+	}
+}
+@media screen and (max-width:350px)
+{
+	.data_content
+	{
+		width:75%;
+	}
+	.data_wrapper
+	{
+		width:90%;
+	}
+}
