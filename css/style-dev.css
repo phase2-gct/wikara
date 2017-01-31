@@ -16,6 +16,9 @@
 .hr-grey{
 	border:solid 2px #d8d8d8;
 }
+.no-padding{
+	padding: 0 !important;
+}
 .padding-10{
 	padding:10px;
 }
