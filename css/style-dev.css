@@ -46,3 +46,7 @@
     width:123px;
 	margin-top: 25px;
 }
+.row>.col-md-4.generascript_img_container {
+    height: 240px !important;
+    margin-bottom: 40px;
+}
