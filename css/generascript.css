@@ -1,15 +1,3 @@
-/*
-	::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	::::::::::::::::::::::::::::::::::::::::: Generascript :::::::::::::::::::::::::::::::::::::::::
-	:::::::::::::::::::::::::::::: Dikembangkan oleh GenerasiCipta.com :::::::::::::::::::::::::::::
-	:::::::::: Harap jangan menghapus informasi ini demi pengembangan script lebih lanjut ::::::::::
-	:::: Dengan tidak menghapus informasi ini, kamu telah membantu menghargai sesama programmer ::::
-	:::::::::::::::::: Script ini diberikan secara gratis untuk semua pengembang :::::::::::::::::::
-	::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-*/
-
 generascriptdata
 {display:none;}
 generascriptdata_slider
@@ -30,6 +18,8 @@ generascriptdata_slider
 	width:inherit;
 	overflow:hidden;
 	white-space:nowrap;
+//	overflow-x:auto;
+//	padding:20px;
 }
 .generascriptSlider_child
 {
@@ -97,59 +87,27 @@ generascriptdata_slider
 }
 .generascript_fade_active
 {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	margin: 0px auto;
-	padding: 0px;
-	overflow-y: auto;
-	width: 105%;
-	height: 100%;
-	transition: 0.7s;
-	-webkit-transition: 0.7s;
-	-moz-transition: 0.7s;
-	-o-transition: 0.7s;
-	z-index: 9999;
-	opacity: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px auto;
+    padding: 0px;
+    overflow-y: auto;
+    width: 105%;
+    height: 100%;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -o-transition: 0.7s;
+    z-index: 9999;
+    opacity: 1;
 }
 .generascript_fade_active::-webkit-scrollbar, 
-.generascript_slideUp_active::-webkit-scrollbar,
 .generascript_slideDown_active::-webkit-scrollbar,
 .generascript_popup_active::-webkit-scrollbar,
 .generascript_slideRight_active::-webkit-scrollbar,
 .generascript_slideLeft_active::-webkit-scrollbar
 {display:none;}
-
-
-.generascript_slideUp_deactive
-{
-	position:absolute;
-	bottom:-1000px;
-	left:0px;
-	margin:0px auto;
-	width:100%;
-	height:100%;
-	transition:0.7s;
-	-webkit-transition:0.7s;
-	-moz-transition:0.7s;
-	-o-transition:0.7s;
-}
-.generascript_slideUp_active
-{
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	margin:0px auto;
-	overflow-y: auto;
-	width:100%;
-	height:100%;
-	transition:0.7s;
-	-webkit-transition:0.7s;
-	-moz-transition:0.7s;
-	-o-transition:0.7s;
-	z-index:9999;
-}
-
 
 .generascript_slideDown_deactive
 {
@@ -170,7 +128,7 @@ generascriptdata_slider
 	top:0px;
 	left:0px;
 	margin:0px auto;
-	overflow-y: auto;
+    overflow-y: auto;
 	width:100%;
 	height:100%;
 	transition:0.7s;
@@ -185,7 +143,7 @@ generascriptdata_slider
 {
 	position:fixed;
 	top:0px;
-	right:-2000px;
+	right:-1000px;
 	margin:0px auto;
 	width:100%;
 	height:100%;
@@ -200,8 +158,8 @@ generascriptdata_slider
 	top:0px;
 	right:0px;
 	margin:0px auto;
-	overflow-y: auto;
-	width: 100%;
+    overflow-y: auto;
+    width: 100%;
 	height:100%;
 	transition:0.7s;
 	-webkit-transition:0.7s;
@@ -230,7 +188,7 @@ generascriptdata_slider
 	top:0px;
 	left:0px;
 	margin:0px auto;
-	overflow-y: auto;
+    overflow-y: auto;
 	width:100%;
 	height:100%;
 	transition:0.7s;
@@ -264,7 +222,7 @@ generascriptdata_slider
 	top:0px;
 	left:0px;
 	margin:0px auto;
-	overflow-y: auto;
+    overflow-y: auto;
 	width:100%;
 	height:100%;
 	transform:scale(1);
@@ -351,7 +309,7 @@ generascriptdata_slider
 	-webkit-transition:0.7s;
 	-moz-transition:0.7s;
 	-o-transition:0.7s;
-	background:rgba(0, 0, 0, 0.1);
+	background:rgba(0, 0, 0, 0.6);
 }
 .generascript_unblock
 {
@@ -369,16 +327,16 @@ generascriptdata_slider
 }
 .generascript_img_container
 {
-	margin: 0px;
-	padding: 0px;
-	overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
 }
 .generascript_img_innerSet
 {
 	height:inherit;
-	text-align: center;
-	vertical-align: middle;
-	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
 	width:inherit;
 }
 .generascript_img_innerSet img
@@ -419,11 +377,11 @@ generascriptdata_slider
 	position:relative;
 	display: inline-block;
 	z-index: 1030;
-	font-size: inherit !important;
-	line-height: inherit !important;
-	opacity: 1 !important;
-	filter: auto !important;
-	visibility: visible !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    opacity: 1 !important;
+    filter: auto !important;
+    visibility: visible !important;
 }
 .tooltip .tooltiptext
 {
@@ -443,9 +401,9 @@ generascriptdata_slider
 	top: 0px;
 	left: 50%;
 	margin-left: -60px;
-	transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
 }
 .tooltip .tooltiptext::after
 {
@@ -471,11 +429,11 @@ generascriptdata_slider
 
 .generascript-de_stilj
 {
-	position: relative;
-	column-count: 4;
-	-webkit-column-count: 4;
-	-moz-column-count: 4;
-	column-gap: 10px;
-	-webkit-column-gap: 10px;
-	-moz-column-gap: 10px;
+    position: relative;
+    column-count: 4;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-gap: 10px;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
 }

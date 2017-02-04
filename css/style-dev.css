@@ -16,6 +16,9 @@
 .hr-grey{
 	border:solid 2px #d8d8d8;
 }
+.no-padding{
+	padding: 0 !important;
+}
 .padding-10{
 	padding:10px;
 }
@@ -43,7 +46,7 @@
     width:123px;
 	margin-top: 25px;
 }
-.generascript_img_container_interior_photo {
-	width:360px;
-	height:320px;
+.row>.col-md-4.generascript_img_container {
+    height: 240px !important;
+    margin-bottom: 40px;
 }
