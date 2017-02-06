@@ -50,3 +50,8 @@
     height: 240px !important;
     margin-bottom: 40px;
 }
+
+.generascript_effect{
+	position:relative;
+	top:100px;
+}
